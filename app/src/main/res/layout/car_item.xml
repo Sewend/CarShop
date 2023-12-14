@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/car_default" />
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/car_image"
+        android:layout_marginStart="8dp"
+        android:text="Название машины"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/car_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_name"
+        android:layout_toEndOf="@id/car_image"
+        android:layout_marginStart="8dp"
+        android:text="Описание машины"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/car_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_description"
+        android:layout_toEndOf="@id/car_image"
+        android:layout_marginStart="8dp"
+        android:text="Количество товара"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/increase_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_quantity"
+        android:layout_toEndOf="@id/car_image"
+        android:layout_marginStart="8dp"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/decrease_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_quantity"
+        android:layout_toEndOf="@id/increase_button"
+        android:layout_marginStart="8dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_quantity"
+        android:layout_toEndOf="@id/decrease_button"
+        android:layout_marginStart="8dp"
+        android:text="X" />
+</RelativeLayout>
